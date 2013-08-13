@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Installing-vmware-tools-on-ubuntu : 於 Ubuntu 上 安裝 VMware Tools" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Installing-vmware-tools-on-ubuntu</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/meyu/Installing-VMware-Tools-on-Ubuntu">View on GitHub</a>
+
+          <h1 id="project_title">Installing-vmware-tools-on-ubuntu</h1>
+          <h2 id="project_tagline">於 Ubuntu 上 安裝 VMware Tools</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/meyu/Installing-VMware-Tools-on-Ubuntu/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/meyu/Installing-VMware-Tools-on-Ubuntu/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="%E6%89%80%E7%82%BA%E4%BD%95%E4%BE%86" class="anchor" href="#%E6%89%80%E7%82%BA%E4%BD%95%E4%BE%86"><span class="octicon octicon-link"></span></a>所為何來</h1>
+
+<p>安裝 VMware Tools 於 VMware 上之 Ubuntu 虛擬主機，使虛擬主機能變更解析度、與實體主機共享剪貼簿和資料夾，並支援 VMware 的快照功能 (Snapshot)。</p>
+
+<h1>
+<a name="%E9%81%A9%E7%94%A8%E7%92%B0%E5%A2%83" class="anchor" href="#%E9%81%A9%E7%94%A8%E7%92%B0%E5%A2%83"><span class="octicon octicon-link"></span></a>適用環境</h1>
+
+<p>實體主機：Windows 7 / Window 8 / OS X 10.8<br>
+虛擬主機：Ubuntu 12.04 / Ubuntu 12.10 (Server &amp; Desktop)<br>
+虛擬平台：VMware Workstation 9 / VMware Fusion 5  </p>
+
+<h1>
+<a name="%E5%AE%89%E8%A3%9D%E6%96%B9%E5%BC%8F" class="anchor" href="#%E5%AE%89%E8%A3%9D%E6%96%B9%E5%BC%8F"><span class="octicon octicon-link"></span></a>安裝方式</h1>
+
+<p>登入 Ubuntu (虛擬主機)。<br>
+點選 VMware 工具列選單 (實體主機)：Virtual Machine &gt; Install VMware Tools。<br>
+此時，虛擬主機將會載入虛擬的 VMware Tools 安裝光碟。<br>
+於終端機中 (虛擬主機)，輸入以下指令，以掛載光碟：</p>
+
+<div class="highlight"><pre>sudo mkdir /mnt/cdrom <span class="o">&amp;&amp;</span>
+sudo mount /dev/cdrom /mnt/cdrom
+</pre></div>
+
+<p>輸入以下指令，以解壓縮安裝檔：</p>
+
+<div class="highlight"><pre>tar xzvf /mnt/cdrom/VMwareTools-9.2.2-893683.tar.gz -C /tmp/
+</pre></div>
+
+<p>注意：9.2.2-893683 為本文示範版本，請依所得版本自行更改。<br>
+輸入以下指令進行安裝 (參數 -d，意指以預設值進行安裝)：</p>
+
+<div class="highlight"><pre>sudo /tmp/vmware-tools-distrib/vmware-install.pl -d
+</pre></div>
+
+<p>完成後，請重新開機 (虛擬主機)：</p>
+
+<div class="highlight"><pre>sudo reboot
+</pre></div>
+
+<p>DONE.</p>
+
+<p><br><br></p>
+
+<h1>
+<a name="%E8%A3%9C%E5%85%85%E8%AA%AA%E6%98%8E" class="anchor" href="#%E8%A3%9C%E5%85%85%E8%AA%AA%E6%98%8E"><span class="octicon octicon-link"></span></a>補充說明</h1>
+
+<ul>
+<li>同樣步驟亦可用來更新或移除 VMware Tools。</li>
+</ul><h1>
+<a name="%E5%8F%83%E8%80%83%E8%B3%87%E6%BA%90" class="anchor" href="#%E5%8F%83%E8%80%83%E8%B3%87%E6%BA%90"><span class="octicon octicon-link"></span></a>參考資源</h1>
+
+<ul>
+<li><a href="http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&amp;cmd=displayKC&amp;externalId=1022525">Installing VMware Tools in an Ubuntu virtual machine</a></li>
+<li><a href="http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&amp;cmd=displayKC&amp;externalId=340">Overview of VMware Tools</a></li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Installing-vmware-tools-on-ubuntu maintained by <a href="https://github.com/meyu">meyu</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
