@@ -27,7 +27,7 @@ tar xzvf /mnt/cdrom/VMwareTools-9.2.2-893683.tar.gz -C /tmp/
 ```bash
 sudo /tmp/vmware-tools-distrib/vmware-install.pl -d
 ```
-完成後，請重新開機：
+完成後，請重新開機 (虛擬主機)：
 ```bash
 sudo reboot
 ```
