@@ -38,10 +38,10 @@ DONE.
 
 補充說明
 =
-- 同樣步驟可用來更新、移除 VMware Tools。
+* 同樣步驟可用來更新、移除 VMware Tools。
 
 
 參考資源
 =
-- [Installing VMware Tools in an Ubuntu virtual machine](http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1022525)
-- [Overview of VMware Tools](http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=340)
+* [Installing VMware Tools in an Ubuntu virtual machine](http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1022525)
+* [Overview of VMware Tools](http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=340)
