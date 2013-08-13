@@ -1,6 +1,6 @@
 所為何來
 =
-安裝 VMware Tools 於 VMware 上之 Ubuntu 虛擬主機，使虛擬主機能變更解析度、與實體主機共享剪貼簿和資料夾，並支援 VMware 的 Snapshots 功能。
+安裝 VMware Tools 於 VMware 上之 Ubuntu 虛擬主機，使虛擬主機能變更解析度、與實體主機共享剪貼簿和資料夾，並支援 VMware 的快照功能 (Snapshot)。
 
 適用環境
 =
