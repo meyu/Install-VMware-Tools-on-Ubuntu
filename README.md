@@ -38,7 +38,7 @@ DONE.
 
 補充說明
 =
-* 同樣步驟可用來更新或移除 VMware Tools。
+* 同樣步驟亦可用來更新或移除 VMware Tools。
 
 
 參考資源
