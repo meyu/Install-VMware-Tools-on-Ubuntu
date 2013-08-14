@@ -18,11 +18,10 @@
 sudo mkdir /mnt/cdrom &&
 sudo mount /dev/cdrom /mnt/cdrom
 ```
-輸入以下指令，以解壓縮安裝檔：
+輸入以下指令，以解壓縮安裝檔：(<code>VMwareTools-9.2.2-893683.tar.gz</code> 為本文示範版本，檔名依實際所得自行修改。)
 ```bash
 tar xzvf /mnt/cdrom/VMwareTools-9.2.2-893683.tar.gz -C /tmp/
 ```
-注意：9.2.2-893683 為本文示範版本，請依所得版本自行更改。  
 輸入以下指令進行安裝 (參數 -d，意指以預設值進行安裝)：
 ```bash
 sudo /tmp/vmware-tools-distrib/vmware-install.pl -d
